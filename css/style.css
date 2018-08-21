@@ -1,0 +1,421 @@
+/* common begins */
+html{
+    font-size:20px;
+    font-family:Helvetica;
+    color:#333;
+}
+body,ul,li{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+a:hover{
+    color:orange;
+}
+ul{
+    list-style:none;
+}
+h2{
+    letter-spacing:.3rem;
+    color:#fff;
+    margin:5rem;
+}
+/* common ends */
+
+/* header begins*/
+header{
+    overflow:hidden;
+    background:#2c3e50;
+}
+header a{
+    font-size:.8rem;
+}
+header .nav{
+    overflow:hidden;
+    width:1200px;
+    margin:0 auto;
+}
+header .left-wrap a{
+    display:inline-block;
+    position:absolute;
+    z-index:1;
+    line-height:2.5rem;
+    padding:.5rem;
+    font-weight:700;
+    background:#99b422;
+    font-size:1.5rem;
+}
+header .left-wrap a:hover{
+    animation:textShadow .5s 1;
+    animation-fill-mode:forwards;
+}
+header .right-wrap{
+    float:right;
+}
+header .right-wrap .right{
+    display:inline-block;
+}
+header .right-wrap .right li{
+    display:inline-block;
+}
+header .right a{
+    display:inline-block;
+    line-height:2.5rem;
+    padding:0 .4rem;
+}
+/* header ends */
+
+
+/* banner begins */
+.banner{
+    //overflow:hidden; 
+    position:relative;
+    color:#000;
+    /* img 的底边对齐*/
+    font-size:0;
+}
+.banner img{
+    max-width:100%;
+    height:auto!important;
+    /* 如何给img加一个磨砂? */
+}
+.banner .info-wrap{
+    position:absolute;
+    z-index:2;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    width:676px;
+    height:230px;
+    margin:auto auto;
+}
+.banner .info-wrap::before{
+    content:'';
+    display:block;
+
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right;0;
+    bottom:0;
+    width:100%;
+    height:100%;
+
+    border-radius:10px;
+    box-shadow:0 0 25px 15px;
+    background:#888;
+    opacity:0.5;
+}
+
+.banner .info-content{
+    text-align:center;
+}
+.banner .info-content p{
+}
+
+.banner .hi{
+    font-size:2rem;
+    font-weight:900;
+}
+.banner .poem{
+    font-size:.7rem;
+    text-align:left;
+    margin-left:2rem;
+    font-size:1rem;
+}
+.banner .author{
+    width:4rem;
+    margin-left:auto;
+    margin-right:2rem;
+    font-size:.7rem;
+}
+
+.banner .intro{
+    text-align:center;
+}
+
+.banner .aboutme{
+    display:inline-block;
+    padding:5px 15px;
+    background:#99b422;
+    border-radius:7px;
+}
+/* banner ends*/
+
+
+/* section-aboutMe begins*/
+.section-aboutme{
+    background:#5e8579;
+    overflow:hidden;
+    position:relative;
+    color:#fff;
+}
+.section-aboutme .aboutme-wrap{
+    width:1000px;
+    margin:2rem auto 0;
+    //background:red;
+    text-align:center;
+    font-size:.8rem;
+}
+.section-aboutme .title{
+    margin-bottom:3rem;
+}
+
+.section-aboutme .content-wrap{
+}
+.section-aboutme .content-wrap ul.info-items{
+    width:40.5rem;
+    margin:0 auto;
+    //background:blue;
+    margin-bottom:3rem;
+}
+
+.section-aboutme .content-wrap ul.info-items li{
+    display:inline-block;
+    overflow:hidden;
+    width:4.5rem;
+    //background:pink;
+    margin:0 2rem;
+}
+.section-aboutme .content-wrap ul.info-items li img{
+    width:4.5rem;
+    float:left;
+    margin-bottom:1rem;
+}
+.section-aboutme .content-wrap ul.info-items li span{
+    clear:both;
+    display:block;
+}
+/* section-aboutMe ends*/
+
+
+/* career-intension begins*/
+.section-skill{
+    overflow:hidden;
+    /* height:window.screen.availHeight */
+    background:#a2b4ba;
+}
+.section-skill .skill-wrap{
+    width:1000px;
+    background-attachment:fixed;
+    margin:0 auto;
+    overflow:hidden;
+    text-align:center;
+
+    font-size:.8rem;
+}
+.section-skill .career-items{
+    //background:red;
+}
+.section-skill .career-items ul{
+    padding:2rem 0;
+}
+.section-skill .career-items li{
+    display:inline-block;
+    overflow:hidden;
+    width:9rem;
+    margin:0 1rem;
+    overflow:hidden;
+    //background:blue;
+    vertical-align:middle;
+}
+.section-skill .career-items li .img-wrap{
+    font-size:7rem;
+    //background:red;
+}
+
+.section-skill .career-items li img{
+    width:4.5rem;
+    vertical-align:middle;
+    //background:green;
+}
+
+.section-skill .career-items li p{
+    word-break:break-all;
+}
+/* career-intension ends*/
+
+
+
+
+/* experence begins */
+.experence{
+    background:#77c34f;
+    position:relative;
+    overflow:hidden;
+    width:100%;
+}
+.experence .experence-wrap{
+    text-align:center;
+}
+.experence ul{
+    text-align:left;
+    list-style-type:circle;
+    width:25rem;
+    margin:0 auto;
+}
+/* experence ends */
+
+
+
+/* workout begins */
+.workout{
+    position:relative;
+    width:100%;
+    background:#5e8579;
+    overflow:hidden;
+}
+.workout .workout-wrap{
+    text-align:center;
+}
+.workout .workout-wrap a{
+    color:#fff;
+}
+.workout .workout-wrap a:hover{
+    color:orange;
+}
+/* workout ends*/
+
+
+/* connectme begins */
+.connectMe{
+    background:#7e884f;
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+}
+.connectMe .connWrap{
+    margin:7rem 0;
+}
+.connectMe .connItems{
+    text-align:center;
+}
+.connectMe ul{
+    display:inline-block;
+    overflow:hidden;
+    font-size:0;
+}
+.connectMe ul li{
+    float:left;
+    padding:1rem 1rem;
+    //background:pink;
+}
+.connectMe ul li p{
+    font-size:1rem;
+    color:#fff;
+}
+.connectMe a{
+    display:inline-block;
+    padding:0;
+    border-radius:50%;
+    //background:green;
+}
+.connectMe a:hover{
+    animation:zoomIn 1s 1;
+}
+.connectMe img{
+    max-width:100%;
+    padding:1rem;
+    width:3rem;
+}
+/* connectme ends*/
+
+/* goHome begins */
+.goHome{
+    width:50px;
+    height: 50px;
+    border-radius:2px;
+    background:#ccc;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    opacity:0.1;
+}
+.goHome::before{
+    content:'';
+    width:50%;
+    height:50%;
+    //background:red;
+
+    transform:rotateZ(45deg);
+    position:absolute;
+    top:25%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto auto;
+
+    border:5px solid #fff;
+    border-right:0 none;
+    border-bottom:0 none;
+    border-top-left-radius:2px;
+}
+.goHome a{
+    display:block;
+    width:100%;
+    height:100%;
+    background:transparent;
+    position:absolute;
+}
+.goHome a:hover{
+    background:green;
+    opacity:.55555;
+}
+/* goHome ends*/
+
+
+
+/* footer begins */
+footer{
+    background:#2c3e50;
+    height:10rem;
+    color:#fff;
+}
+footer .wrapper{
+    width:1000px;
+    height:5rem;
+    padding:2rem 1rem;
+    margin:0 auto;
+    overflow:hidden;
+}
+footer .wrapper li{
+    padding:.2rem 0;
+    float:left;
+    margin:0 1rem;
+}
+footer .wrapper a{
+    color:#fff;
+}
+footer .wrapper a:hover{
+    color:orange;
+}
+/* footer ends*/
+
+
+
+
+/* animations */
+@keyframes textShadow{
+    0%{
+        text-shadow:0 0 0 #f00;
+    }
+    100%{
+        text-shadow:0 5px 15px #f00;
+        color:#fff;
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        box-shadow:0 0 0px 0px transparent;        
+    }
+    100%{
+        box-shadow:0 0 0px 15px #ffffffaa;        
+    }
+}
